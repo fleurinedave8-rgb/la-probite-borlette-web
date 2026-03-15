@@ -5,7 +5,7 @@
 import { useEffect, useRef, useState, useCallback } from 'react';
 
 const WS_URL = () =>
-  (process.env.NEXT_PUBLIC_API_URL || 'https://web-production-9549c.up.railway.app')
+  (process.env.NEXT_PUBLIC_API_URL || 'https://borlette-backend-web-production.up.railway.app')
     .replace('https://','wss://').replace('http://','ws://') + '/ws';
 
 export default function useRealtime({ onFiche, onResultat, onPOS, autoReload, reloadInterval=30000 } = {}) {

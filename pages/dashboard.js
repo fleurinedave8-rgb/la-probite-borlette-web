@@ -73,7 +73,7 @@ export default function Dashboard() {
     let ws;
     const connectWS = () => {
       try {
-        const base = (process.env.NEXT_PUBLIC_API_URL || 'https://web-production-9549c.up.railway.app')
+        const base = (process.env.NEXT_PUBLIC_API_URL || 'https://borlette-backend-web-production.up.railway.app')
           .replace('https://','wss://').replace('http://','ws://');
         ws = new WebSocket(`${base}/ws`);
         ws.onopen  = () => setWsLive(true);

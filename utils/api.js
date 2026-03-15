@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://web-production-9549c.up.railway.app';
+const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://borlette-backend-web-production.up.railway.app';
 
 const api = axios.create({
   baseURL: API_URL,
